@@ -1,0 +1,212 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1614851099511-773084f6911d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+.container {
+  background: #ecf4ff;
+  color: #1c1c1c;
+  margin: 64px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  border-radius: 20px;
+  padding: 64px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.perfil-foto {
+  border-radius: 460px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+  margin-left: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.titulo h1 {
+  font-weight: 600;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ÍCONES */
+.icones-perfil {
+  margin: 3px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #9d4edd;
+  transition: color 0.2s;
+}
+
+.icones-perfil:hover {
+  color: #c77dff;
+}
+
+/* PROJETOS */
+.projetos {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://images.unsplash.com/photo-1614851099511-773084f6911d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 15px;
+  margin: 34px;
+}
+
+.container-projetos {
+  margin-left: 20px;
+}
+
+.projetos h3 {
+  color: #ffffff;
+  margin-left: 43px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 3px 16px;
+  background: #ecf4ff;
+  border-radius: 100px;
+}
+
+.projetos li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.projetos a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.projetos a:hover {
+  color: #dee2e6;
+}
+
+/* Habilidades */
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://images.unsplash.com/photo-1614851099511-773084f6911d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 15px;
+  margin: 34px;
+}
+
+.container-habilidades {
+  margin-left: 20px;
+}
+
+.habilidades h3 {
+  color: #ffffff;
+  margin-left: 43px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+}
+
+.habilidades li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.habilidades a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dark {
+  background: linear-gradient(236.85deg, black 60.03%);
+}
+
+.dark .container {
+  background: #0b090a;
+  color: #f6f6f6;
+}
+
+.dark .container {
+  color: #1c1c1c;
+}
+
+.dark .tema button {
+  background: #1c1c1c;
+  color: #ffffff;
+  border: 2px solid #f7f7f7;
+}
+
+.dark .titulo h1 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.dark .titulo h3 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.dark .container-sobremim {
+  color: #ffffff;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 100px;
+  height: 50px;
+  background: #0b090a;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #3c096c;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 90px;
+}
